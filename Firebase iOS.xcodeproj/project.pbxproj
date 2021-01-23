@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150ED1C725BCD875004EB57D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150ED1C625BCD875004EB57D /* SignUpViewController.swift */; };
+		150ED1CA25BCD882004EB57D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150ED1C925BCD882004EB57D /* ForgetPasswordViewController.swift */; };
 		159B1A7325B584F6002DE039 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159B1A7225B584F6002DE039 /* HomeViewController.swift */; };
 		15A6F55D25B52AA20026ACF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6F55C25B52AA20026ACF4 /* AppDelegate.swift */; };
 		15A6F55F25B52AA20026ACF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6F55E25B52AA20026ACF4 /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		05F4AFE82F8BEFC6428112CC /* libPods-Firebase iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Firebase iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		150ED1C625BCD875004EB57D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		150ED1C925BCD882004EB57D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		159B1A7225B584F6002DE039 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		15A6F55925B52AA20026ACF4 /* Firebase iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A6F55C25B52AA20026ACF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			children = (
 				15A6F56025B52AA20026ACF4 /* ViewController.swift */,
 				159B1A7225B584F6002DE039 /* HomeViewController.swift */,
+				150ED1C625BCD875004EB57D /* SignUpViewController.swift */,
+				150ED1C925BCD882004EB57D /* ForgetPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +228,8 @@
 				15A6F55D25B52AA20026ACF4 /* AppDelegate.swift in Sources */,
 				15A6F55F25B52AA20026ACF4 /* SceneDelegate.swift in Sources */,
 				159B1A7325B584F6002DE039 /* HomeViewController.swift in Sources */,
+				150ED1CA25BCD882004EB57D /* ForgetPasswordViewController.swift in Sources */,
+				150ED1C725BCD875004EB57D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,13 +20,13 @@ class HomeViewController: UIViewController {
             toAuthScreen()
         }
         catch {
-            print("error to logout")
+            self.alertErrorMessage(message: "error logout")
         }
         
     }
     
     func toAuthScreen(){
-        let vc = storyboard?.instantiateViewController(identifier: "AuthScene") as! ViewController
+        let vc = storyboard?.instantiateViewController(identifier: "LoginScene") as! ViewController
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
     }
