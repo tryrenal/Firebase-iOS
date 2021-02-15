@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     @IBAction func btnLogout(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
-            toAuthScreen()
+            toSplashScreen()
         }
         catch {
             self.alertErrorMessage(message: "error logout")
@@ -25,8 +25,9 @@ class HomeViewController: UIViewController {
         
     }
     
-    func toAuthScreen(){
-        let vc = storyboard?.instantiateViewController(identifier: "LoginScene") as! ViewController
+    func toSplashScreen(){
+        let vc = storyboard?.instantiateViewController(identifier: "SplashScene") as!
+            SplashViewController
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
     }
