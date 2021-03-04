@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		150ED1C725BCD875004EB57D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150ED1C625BCD875004EB57D /* SignUpViewController.swift */; };
 		150ED1CA25BCD882004EB57D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150ED1C925BCD882004EB57D /* ForgetPasswordViewController.swift */; };
+		1558303B25F0BD52008290C6 /* GoogleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1558303A25F0BD52008290C6 /* GoogleLoginViewController.swift */; };
 		155F0F0125DA3FB200E8F667 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F0F0025DA3FB200E8F667 /* SplashViewController.swift */; };
 		155F0F0425DA40CF00E8F667 /* AuthPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F0F0325DA40CF00E8F667 /* AuthPhoneViewController.swift */; };
 		155F0F0825DA532800E8F667 /* OtpPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F0F0725DA532800E8F667 /* OtpPhoneViewController.swift */; };
@@ -27,6 +28,7 @@
 		05F4AFE82F8BEFC6428112CC /* libPods-Firebase iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Firebase iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		150ED1C625BCD875004EB57D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		150ED1C925BCD882004EB57D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		1558303A25F0BD52008290C6 /* GoogleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewController.swift; sourceTree = "<group>"; };
 		155F0F0025DA3FB200E8F667 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		155F0F0325DA40CF00E8F667 /* AuthPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPhoneViewController.swift; sourceTree = "<group>"; };
 		155F0F0725DA532800E8F667 /* OtpPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpPhoneViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				155F0F0025DA3FB200E8F667 /* SplashViewController.swift */,
 				155F0F0325DA40CF00E8F667 /* AuthPhoneViewController.swift */,
 				155F0F0725DA532800E8F667 /* OtpPhoneViewController.swift */,
+				1558303A25F0BD52008290C6 /* GoogleLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				15A6F55525B52AA20026ACF4 /* Sources */,
 				15A6F55625B52AA20026ACF4 /* Frameworks */,
 				15A6F55725B52AA20026ACF4 /* Resources */,
+				2DB0E27CF4FE4DBA84E4A1E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +230,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2DB0E27CF4FE4DBA84E4A1E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase iOS/Pods-Firebase iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase iOS/Pods-Firebase iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firebase iOS/Pods-Firebase iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A6F56125B52AA20026ACF4 /* ViewController.swift in Sources */,
+				1558303B25F0BD52008290C6 /* GoogleLoginViewController.swift in Sources */,
 				15A6F55D25B52AA20026ACF4 /* AppDelegate.swift in Sources */,
 				155F0F0825DA532800E8F667 /* OtpPhoneViewController.swift in Sources */,
 				15A6F55F25B52AA20026ACF4 /* SceneDelegate.swift in Sources */,

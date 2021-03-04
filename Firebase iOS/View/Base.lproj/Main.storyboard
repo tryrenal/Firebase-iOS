@@ -297,6 +297,36 @@
             </objects>
             <point key="canvasLocation" x="421.73913043478262" y="81.696428571428569"/>
         </scene>
+        <!--Google Login View Controller-->
+        <scene sceneID="0Nc-pd-mp5">
+            <objects>
+                <viewController storyboardIdentifier="GoogleScene" id="Aa6-6h-ZCu" customClass="GoogleLoginViewController" customModule="Firebase_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q00-x2-5QQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96w-lk-8Tq">
+                                <rect key="frame" x="153.5" y="404" width="107" height="34"/>
+                                <state key="normal" title="Login Google">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleLogin:" destination="Aa6-6h-ZCu" eventType="touchUpInside" id="mAq-4M-Jj1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kZR-Kg-zay"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="96w-lk-8Tq" firstAttribute="centerY" secondItem="Q00-x2-5QQ" secondAttribute="centerY" id="84p-gt-J2k"/>
+                            <constraint firstItem="96w-lk-8Tq" firstAttribute="centerX" secondItem="Q00-x2-5QQ" secondAttribute="centerX" id="jf8-lh-0sQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOw-NT-CJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="800"/>
+        </scene>
         <!--Splash View Controller-->
         <scene sceneID="Zfr-Fk-uW1">
             <objects>
@@ -306,7 +336,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QlZ-D9-NOo">
-                                <rect key="frame" x="104" y="403" width="206" height="90"/>
+                                <rect key="frame" x="104" y="373" width="206" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDc-zJ-vug">
                                         <rect key="frame" x="0.0" y="0.0" width="206" height="30"/>
@@ -320,6 +350,13 @@
                                         <state key="normal" title="Authentication Phone Number"/>
                                         <connections>
                                             <segue destination="dN6-v7-Zdm" kind="show" id="wkp-yZ-tZy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-jr-h2n">
+                                        <rect key="frame" x="0.0" y="120" width="206" height="30"/>
+                                        <state key="normal" title="Authentication Google"/>
+                                        <connections>
+                                            <segue destination="Aa6-6h-ZCu" kind="showDetail" id="owk-J6-gcx"/>
                                         </connections>
                                     </button>
                                 </subviews>
